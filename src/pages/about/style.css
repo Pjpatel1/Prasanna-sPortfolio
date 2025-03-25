@@ -10,12 +10,25 @@
 .t_border {
     border-color: var(--text-color) !important;
 }
-
+.container
+{
+    padding-bottom: 50px;
+}
 .progress-title {
     font-size: 16px;
     font-weight: 700;
     margin: 15px 0 20px;
     font-family: 'Raleway';
+}
+.Uwindsorlogo
+{
+    width: 200px; 
+    margin: 0 auto;
+}
+.logocontainer
+{
+    text-align: center;
+    width: 100%;
 }
 .Heroimage-container
 {   position:relative;
@@ -23,6 +36,11 @@
     background-size: cover;
     margin-bottom: 40px;
     aspect-ratio: 2.22/1;
+}
+.BodyText
+{
+    margin-bottom: 30px;
+    width: 100%;
 }
 .hero-image {
     width: 100%;

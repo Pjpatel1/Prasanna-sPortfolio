@@ -11,7 +11,7 @@ import {
   services,
 } from "../../content_option";
 import HeroImage from "./Images/workperch-3jjgUHIibPs-unsplash.jpg"
-
+import Uwindsor from "./Images/Uwindsorlogo.webp"
 export const About = () => {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
@@ -82,6 +82,12 @@ export const About = () => {
            <div className="BodyText" ref={section1Ref}>
             <h2>Who am I</h2>
             <h4>I am a Cybersecurity Analyst with 3 years of combined experience in software development and cybersecurity, holding a Master’s in Electrical and Computer Engineering with a focus on cybersecurity and a CompTIA Security+ certification. Proficient in SIEM tools like Wazuh, ELK Stack, and Splunk, as well as Metasploit, Kali Linux, and Ubuntu Server, I excel at automating security processes using Python and Shell scripting. My hands-on experience includes building a fully functional home lab to simulate and mitigate real-world threats, driven by a passion for protecting sensitive data and creating secure systems. Known for my creativity and problem-solving skills, I aim to refine and innovate cybersecurity practices, with a long-term goal of becoming a CISO. Let’s connect and build a safer digital future together.</h4>
+          </div>
+          <div className="BodyText">
+            <h2>Education</h2>
+            <div className="logocontainer"><img src={Uwindsor} className="Uwindsorlogo"></img></div>
+            <h4>Masters of Electrical and Computer Engineering in University of Windsor</h4> 
+            <h4>Focused in Cyber-security</h4>
           </div>
          
       </Container>

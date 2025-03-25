@@ -61,18 +61,19 @@ const skills = [{
     },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
+const services = [
+    // {
+    //     title: "UI & UX Design",
+    //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+    // },
+    // {
+    //     title: "Mobile Apps",
+    //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+    // },
+    // {
+    //     title: "Wordpress Design",
+    //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+    // },
 ];
 
 const dataportfolio = [{
@@ -90,7 +91,16 @@ const dataportfolio = [{
         description: "Potfolio Site",
         link: "https://prasanna-sportfolio.onrender.com/",
     },
-    
+    {
+        img: "https://picsum.photos/400/?grayscale",
+        description: "Build AES algorithm using Python",
+        link: "https://colab.research.google.com/drive/1qPXRrHfDhkvJgynIBeVVLNwWQzX6Qdqn?usp=sharing#scrollTo=w-ydW-I58WPm",
+    },
+    {
+        img: "https://picsum.photos/400/?grayscale",
+        description: "Working on Automation Project not yet published",
+        // link: "https://colab.research.google.com/drive/1qPXRrHfDhkvJgynIBeVVLNwWQzX6Qdqn?usp=sharing#scrollTo=w-ydW-I58WPm",
+    },
 ];
 
 const contactConfig = {
