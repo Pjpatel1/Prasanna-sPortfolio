@@ -47,6 +47,12 @@ section {
 .intro_sec .text,
 .intro_sec .h_bg-image {
     width: 50%;
+    text-align: center;
+}
+.BackgroundImage
+{
+    width: auto;
+    height: 100%;
 }
 
 @media (max-width:991.98px) {
@@ -222,6 +228,15 @@ section {
     font-weight: 700;
     margin-bottom: 15px;
 }
+.new-badge
+{
+    background: #ff4757;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    margin-left: 5px;  
+}
 
 .intro_sec .h_bg-image .block p {
     font-size: 14px;
@@ -230,5 +245,5 @@ section {
 }
 
 .intro_sec .h_bg-image {
-    filter: saturate(0.5);
+    filter: saturate(0.8);
 }

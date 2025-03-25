@@ -112,7 +112,7 @@ export const ContactUs = () => {
             <p>{contactConfig.description}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact__form w-100">
+            {/* <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
                 <Col lg="6" className="form-group">
                   <input
@@ -157,7 +157,7 @@ export const ContactUs = () => {
                   </button>
                 </Col>
               </Row>
-            </form>
+            </form> */}
           </Col>
         </Row>
       </Container>

@@ -1,4 +1,5 @@
-import React from "react";
+import {React, useRef} from "react";
+import { useNavigate } from 'react-router-dom';
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
@@ -9,8 +10,21 @@ import {
   skills,
   services,
 } from "../../content_option";
+import HeroImage from "./Images/workperch-3jjgUHIibPs-unsplash.jpg"
 
 export const About = () => {
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const navigate = useNavigate();
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const navigateToPage = (path) => {
+    navigate(path);
+  };  
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -21,80 +35,57 @@ export const About = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">About me</h1>
+            <h1 className="display-4 mb-4">Get to Know About me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">{dataabout.title}</h3>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <div>
-              <p>{dataabout.aboutme}</p>
+        <div className="Heroimage-container">
+          <h7>Please click and hover on Image</h7>
+          <img  className="hero-image" src={HeroImage}></img>
+            <div 
+              className="hover-section section-1"
+              onClick={() => scrollToSection(section1Ref)}
+            >
+              <span className="hover-text">Who am I</span>
             </div>
-          </Col>
-        </Row>
-        <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
-          </Col>
-          <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
+            <div
+                className="hover-section section-2"
+                onClick={() => navigateToPage('/portfolio')}
+            >
+              <span className="hover-text">Projects</span>
+            </div>
+            <div
+                className="hover-section section-3"
+                onClick={() => navigateToPage('/contact')}
+            >
+              <span className="hover-text">Contact Me</span>
+            </div>
+            <div
+                className="hover-section section-4"
+                onClick={() => scrollToSection('Software Skills')}
+            >
+              <span className="hover-text">Software Development skills</span>
+            </div>
+            <div
+                className="hover-section section-5"
+                onClick={() => scrollToSection('Cyber Skills')}
+            >
+                <span className="hover-text">Cyber-security Skills</span>
+            </div>
+            <div 
+              className="section-6 Security+"
+              onClick={() => navigateToPage('/Certficates')}
+            >
+            </div>
+
+        </div>
+           <div className="BodyText" ref={section1Ref}>
+            <h2>Who am I</h2>
+            <h4>I am a Cybersecurity Analyst with 3 years of combined experience in software development and cybersecurity, holding a Master’s in Electrical and Computer Engineering with a focus on cybersecurity and a CompTIA Security+ certification. Proficient in SIEM tools like Wazuh, ELK Stack, and Splunk, as well as Metasploit, Kali Linux, and Ubuntu Server, I excel at automating security processes using Python and Shell scripting. My hands-on experience includes building a fully functional home lab to simulate and mitigate real-world threats, driven by a passion for protecting sensitive data and creating secure systems. Known for my creativity and problem-solving skills, I aim to refine and innovate cybersecurity practices, with a long-term goal of becoming a CISO. Let’s connect and build a safer digital future together.</h4>
+          </div>
+         
       </Container>
+     
     </HelmetProvider>
   );
 };

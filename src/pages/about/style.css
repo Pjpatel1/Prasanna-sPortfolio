@@ -17,7 +17,94 @@
     margin: 15px 0 20px;
     font-family: 'Raleway';
 }
-
+.Heroimage-container
+{   position:relative;
+    max-width: 1140px;
+    background-size: cover;
+    margin-bottom: 40px;
+    aspect-ratio: 2.22/1;
+}
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers container */
+    display: block;
+  }
+  
+.hover-section
+{
+    position: absolute;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+/* Position each section */
+/* Position each section */
+.section-1 {
+    top: 46%;
+    left: 38%;
+    width: 21%; /* Use percentage for responsiveness */
+    height: 28%;
+  }
+  
+  .section-2 {
+    top: 82%;
+    left: 0%;
+    width: 23%;
+    height: 15%;
+  }
+  
+  .section-3 {
+    top: 82%;
+    right: 0%;
+    width: 24%;
+    height: 15%;
+  }
+  .section-4 {
+    top:12%;
+    right: 0%;
+    height: 59%;
+    width: 21%;
+  }
+  .section-5 {
+   
+    top: 21%;
+    right: 80%;
+    height: 51%;
+    width: 19%;
+    
+  }
+  .section-6 {
+    position: absolute;
+    background-image: url(./Images/SecurityPlusBlack.png);
+    background-size: cover;
+    top: 16%;
+    right: 45%;
+    height: 25%;
+    width: 13%;
+  }
+  .section-6:hover
+  {
+    background-image: url(./Images/SecurityPlusColor.png);
+  }
+.hover-section:hover {
+     background: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+  }
+  .hover-text {
+    width: auto;
+    opacity: 0;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .hover-section:hover .hover-text {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Move to center */
+  }
 .progress {
     height: 5px;
     background: var(--secondary);

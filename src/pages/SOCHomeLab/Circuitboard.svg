@@ -1,0 +1,14 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="circuitPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <!-- Horizontal Lines -->
+      <line x1="0" y1="20" x2="40" y2="20" stroke="#00FF00" stroke-width="1" />
+      <!-- Vertical Lines -->
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#00FF00" stroke-width="1" />
+      <!-- Diagonal Lines -->
+      <line x1="0" y1="0" x2="40" y2="40" stroke="#00FF00" stroke-width="1" stroke-dasharray="5,5" />
+      <line x1="40" y1="0" x2="0" y2="40" stroke="#00FF00" stroke-width="1" stroke-dasharray="5,5" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#circuitPattern)" />
+</svg>
