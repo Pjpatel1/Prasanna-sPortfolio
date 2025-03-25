@@ -19,7 +19,10 @@ section {
     background: var(--primary-color);
     border-radius: 0;
 }
-
+.BackgroundImage
+{
+    height: 100%;
+}
 .btn-portfolio a {
     color: #000;
     text-decoration: none;
@@ -49,11 +52,7 @@ section {
     width: 50%;
     text-align: center;
 }
-.BackgroundImage
-{
-    width: auto;
-    height: 100%;
-}
+
 
 @media (max-width:991.98px) {
     .intro_sec .text,
@@ -199,9 +198,10 @@ section {
 }
 
 @media (max-width:991.98px) {
+   
     .intro_sec .h_bg-image {
-        height: 600px;
-        min-height: 75vh;
+        height: 75vh !important;
+         min-height: 75vh;
         margin-bottom: 30px;
     }
     .intro_sec .h_bg-image .block {
@@ -211,6 +211,10 @@ section {
         margin: 0;
         left: 50%;
         transform: translate(-50%, 50%);
+    }
+    .ac_btn
+    {
+        margin:20px;
     }
 }
 
