@@ -237,7 +237,10 @@ section {
     border-radius: 10px;
     margin-left: 5px;  
 }
-
+.contactbtn
+{
+    margin: 20px;
+}
 .intro_sec .h_bg-image .block p {
     font-size: 14px;
     line-height: 1.3;

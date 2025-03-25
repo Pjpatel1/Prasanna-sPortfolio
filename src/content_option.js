@@ -1,20 +1,20 @@
 import React from "react";
 import SIEM from "./pages/SOCHomeLab/SIEM.webp";
-const logotext = "Prasanna";
+const logotext = "Prasannakumar";
 const meta = {
-    title: "Prasanna Patel",
-    description: "I’m Prasanna Patel CyberSecurity Analyst and Software devloper,currently working in Canada",
+    title: "Prasannakumar Patel",
+    description: "I’m Prasannakumar Patel CyberSecurity Analyst and Software devloper,currently working in Canada",
 };
 
 const introdata = {
-    title: "I’m Prasanna",
+    title: "I’m Prasannakumar",
     animated: {
         first: "I love building Softwares",
         second: "I love Automation",
         third: "I am good at building Secure Enclave",
     },
     description: "I am Security + Certified",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
@@ -93,7 +93,7 @@ const dataportfolio = [{
     },
     {
         img: "https://picsum.photos/400/?grayscale",
-        description: "Build AES algorithm using Python",
+        description: "Built AES algorithm using Python",
         link: "https://colab.research.google.com/drive/1qPXRrHfDhkvJgynIBeVVLNwWQzX6Qdqn?usp=sharing#scrollTo=w-ydW-I58WPm",
     },
     {

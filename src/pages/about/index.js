@@ -40,7 +40,7 @@ export const About = () => {
           </Col>
         </Row>
         <div className="Heroimage-container">
-          <h7>Please click and hover on Image</h7>
+          <h7>Please click and hover over devices & badges in image</h7>
           <img  className="hero-image" src={HeroImage}></img>
             <div 
               className="hover-section section-1"
@@ -60,18 +60,18 @@ export const About = () => {
             >
               <span className="hover-text">Contact Me</span>
             </div>
-            <div
+            {/* <div
                 className="hover-section section-4"
                 onClick={() => scrollToSection('Software Skills')}
             >
               <span className="hover-text">Software Development skills</span>
-            </div>
-            <div
+            </div> */}
+            {/* <div
                 className="hover-section section-5"
                 onClick={() => scrollToSection('Cyber Skills')}
             >
                 <span className="hover-text">Cyber-security Skills</span>
-            </div>
+            </div> */}
             <div 
               className="section-6 Security+"
               onClick={() => navigateToPage('/Certficates')}
@@ -86,7 +86,7 @@ export const About = () => {
           <div className="BodyText">
             <h2>Education</h2>
             <div className="logocontainer"><img src={Uwindsor} className="Uwindsorlogo"></img></div>
-            <h4>Masters of Electrical and Computer Engineering in University of Windsor</h4> 
+            <h4>Masters of Electrical and Computer Engineering at University of Windsor</h4> 
             <h4>Focused in Cyber-security</h4>
           </div>
          
