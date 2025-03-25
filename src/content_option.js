@@ -79,7 +79,7 @@ const services = [
 const dataportfolio = [{
         img: SIEM,
         description: "SOC Hands-on home lab",
-        link: "/SOCHomelab",
+        link: "/sochomelab",
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
