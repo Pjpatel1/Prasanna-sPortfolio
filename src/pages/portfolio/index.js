@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
-
+import SIEM from "../../pages/SOCHomeLab/SIEM.webp";
 export const Portfolio = () => {
+  const navigate = useNavigate();
+  const navigateToPage = (path) => {
+    navigate(path);
+  };  
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -20,17 +25,32 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+       
+            
+              <div  className="po_item">
+                <img src={SIEM} alt="" />
                 <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <p>SOC Hands-on home lab</p>
+                  <a onClick={() => navigateToPage('/sochomelab')}>view project</a>
                 </div>
               </div>
-            );
-          })}
+              <div  className="po_item">
+                <img src="https://picsum.photos/400/800/?grayscale" alt="" />
+                <div className="content">
+                  <p>E-Commerce Site</p>
+                  <a href="https://testing-9-j4r9.onrender.com/Namaste">view project</a>
+                </div>
+              </div>
+              <div  className="po_item">
+                <img src="https://picsum.photos/400/?grayscale" alt="" />
+                <div className="content">
+                  <p>Portfolio Site</p>
+                  <a href="https://prasanna-sportfolio.onrender.com/">view project</a>
+                </div>
+                
+              </div>
+       
+          
         </div>
       </Container>
     </HelmetProvider>
