@@ -4,7 +4,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
-import SIEM from "../../pages/SOCHomeLab/SIEM.webp";
+import SIEM from "../Projects/SOCHomeLab/SIEM.webp";
 export const Portfolio = () => {
   const navigate = useNavigate();
   const navigateToPage = (path) => {
@@ -38,7 +38,7 @@ export const Portfolio = () => {
                 <img src="https://picsum.photos/400/800/?grayscale" alt="" />
                 <div className="content">
                   <p>E-Commerce Site</p>
-                  <a href="https://testing-9-j4r9.onrender.com/Namaste">view project</a>
+                  <a onClick={() => navigateToPage('/SecureEcommerce')}>view project</a>
                 </div>
               </div>
               <div  className="po_item">

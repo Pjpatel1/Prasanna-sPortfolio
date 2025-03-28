@@ -1,5 +1,5 @@
 import React from "react";
-import SIEM from "./pages/SOCHomeLab/SIEM.webp";
+import SIEM from "./pages/Projects/SOCHomeLab/SIEM.webp";
 const logotext = "Prasannakumar";
 const meta = {
     title: "Prasannakumar Patel",
@@ -84,7 +84,7 @@ const dataportfolio = [{
     {
         img: "https://picsum.photos/400/800/?grayscale",
         description: "E Commerce Site",
-        link: "https://testing-9-j4r9.onrender.com/Namaste",
+        link: "/SecureEcommerce",
     },
     {
         img: "https://picsum.photos/400/?grayscale",
