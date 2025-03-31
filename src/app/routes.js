@@ -10,6 +10,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import {SOCHomelab} from "../pages/Projects/SOCHomeLab/index"
 import {Certificates} from "../pages/Certificates/index"
 import {SecureEcommerce} from "../pages/Projects/SecureECommerceSite";
+import IAMClenup from "../pages/Projects/IAM CleanUp/IAMClenup";
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
     <CSSTransition
@@ -29,6 +30,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/sochomelab" element={<SOCHomelab/>} />
         <Route path="/Certficates" element={<Certificates/>} />
         <Route path="/SecureEcommerce" element={<SecureEcommerce/>} />
+        <Route path="/IAMClenup" element={<IAMClenup/>}/>
         {/* <Route path="*" element={<Home />} /> */}
       </Routes>
     </CSSTransition>
