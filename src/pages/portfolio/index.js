@@ -53,7 +53,7 @@ export const Portfolio = () => {
                 <img src="https://picsum.photos/400/?grayscale" alt="" />
                 <div className="content">
                   <p>Automated IAM Least-Privilege Cleanup Tool</p>
-                  <a href="https://prasanna-sportfolio.onrender.com/">view project</a>
+                  <a  onClick={() => navigateToPage('/IAMClenup')} >view project</a>
                 </div>
                 
               </div>
