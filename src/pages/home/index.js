@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 import myImage from "./Images/UwindsorFallConvocation2024-4.jpg"
 export const Home = () => {
 
-  useEffect(() => {
-    alert("Yet under construction, can explore available features");
-  });
   
   return (
     <HelmetProvider>
@@ -32,7 +29,7 @@ export const Home = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        "Aspiring Software Engineer","Aspiring Security Engineer", "Aspiring IAM Analyst"
+                        "Aspiring Software Engineer", "Aspiring Security Engineer", "Aspiring Security Analyst", "Aspiring IAM Analyst", 
                       ],
                       autoStart: true,
                       loop: true,
