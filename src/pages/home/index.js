@@ -29,7 +29,7 @@ export const Home = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        "Aspiring Software Engineer", "Aspiring Security Engineer", "Aspiring Security Analyst", "Aspiring IAM Analyst", 
+                        "IT Administration","Aspiring Software Engineer", "Aspiring Security Engineer", "Aspiring Security Analyst", "Aspiring IAM Analyst", 
                       ],
                       autoStart: true,
                       loop: true,
